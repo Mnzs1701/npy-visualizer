@@ -1,0 +1,10 @@
+<launch>
+  <!--Absolute paths have been given, the txt file contains the names of all the files i.e frame-00001.npy  etc-->
+  <param name="npy_path" type="string" value="path_to_npy_file" /> 
+  <param name="npy_file_list" type="string" value="path_to_text_file_with_list_of_npy_files" />
+
+  <node pkg="npy_visualizer" type="npy_visualize.py" name="npy_visualize" output="screen" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find npy_visualizer)/config/rviz_config.rviz"/>
+
+</launch>
