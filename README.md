@@ -1,4 +1,4 @@
-# npy-visualizer
+# npy_visualizer
 Package that converts npy files into ROS pointclouds that can be used for processing and visualisation 
 
 ## Installation
